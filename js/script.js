@@ -11,11 +11,19 @@ function generateQuote() {
         {
             quote: "'Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me.'",
             author: "Michael Scott, Season 2, 'The Fight'"
+        },
+        {
+            quote: "'I’m not superstitious, but I am a little stitious.'",
+            author: "Michael Scott, Season 4, 'Fun Run'"
+        },
+        {
+            quote: "'If I don’t have some cake soon, I might die.'",
+            author: "Stanley Hudson, Season 4, 'Survivor Man'"
         }
     ];
 
     let arrayIndex = Math.floor(Math.random() * quotes.length);
-    document.getElementById("quotation").innerHTML = "&quot;" + quotes[index].quote + "&quot;";
+    document.getElementById("quotation").innerHTML = "&quot;" + quotes[arrayIndex].quote + "&quot;";
     document.getElementById("author").innerHTML = quotes[arrayIndex].author;
 }
 
@@ -23,4 +31,4 @@ window.onload = function () {
     generateQuote();
 }
 
-document.getElementById("generate").addEventListener('click', generateQuote());
+// document.getElementById("generate").addEventListener('click', generateQuote());
